@@ -1,38 +1,187 @@
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+div {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="color"],
+input[type="number"] {
+  padding: 6px;
+  margin-right: 10px;
+}
+
+p {
+  font-size: 18px;
+}
+@keyframes enlargeText {
+  0% {
+    font-size: 18px;
+  }
+  5% {
+    font-size: 19px;
+  }
+  10% {
+    font-size: 20px;
+  }
+  15% {
+    font-size: 22px;
+  }
+  20% {
+    font-size: 24px;
+  }
+  25% {
+    font-size: 26px;
+  }
+  30% {
+    font-size: 28px;
+  }
+  35% {
+    font-size: 30px;
+  }
+  40% {
+    font-size: 32px;
+  }
+  45% {
+    font-size: 34px;
+  }
+  50% {
+    font-size: 36px;
+  }
+  55% {
+    font-size: 38px;
+  }
+  60% {
+    font-size: 40px;
+  }
+  65% {
+    font-size: 42px;
+  }
+  70% {
+    font-size: 44px;
+  }
+  75% {
+    font-size: 46px;
+  }
+  80% {
+    font-size: 48px;
+  }
+  85% {
+    font-size: 50px;
+  }
+  90% {
+    font-size: 52px;
+  }
+  95% {
+    font-size: 54px;
+  }
+  100% {
+    font-size: 56px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes scaleDown {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.05);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  15% {
+    transform: scale(1.15);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  25% {
+    transform: scale(1.15);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  35% {
+    transform: scale(1.05);
+  }
+  40% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  55% {
+    transform: scale(1.15);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  65% {
+    transform: scale(1.15);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1.05);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  95% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-.App-link {
-  color: #61dafb;
+
+.App {
+  text-align: center;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  margin-bottom: 20px;
+  animation: enlargeText 3s infinite;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="color"],
+input[type="number"] {
+  padding: 6px;
+  margin-right: 10px;
+}
+
+p {
+  font-size: 18px;
+  animation: scaleDown 3s infinite;
 }
